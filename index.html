@@ -3,9 +3,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/style.css">
+    <script src="dist/bundle.js" defer></script>
     <title>Столовая.РУ</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li><a href="" class="menu__link">Компания</a></li>
+                        <li><a href="" class="menu__link">Портфолио</a></li>
+                        <li><a href="" class="menu__link">Проектирование</a></li>
+                        <li><a href="" class="menu__link">Ресторанам</a></li>
+                        <li><a href="" class="menu__link">Застройщикам</a></li>
+                        <li><a href="" class="menu__link">Гос.заказчикам</a></li>
+                        <li><a href="" class="menu__link">Таблет-питание</a></li>
+                        <li><a href="" class="menu__link">Сервис</a></li>
+                        <li><a href="" class="menu__link">Контакты</a></li>
+                        <li><a href="" class="menu__link"><img class="menu__img">info@stolovay.ru</a></li>
+                        <li><a href="" class="menu__link"><img class="menu__img">8 495 790-72-05</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header__middle">
+            <div class="container">
+                <div class="header__middle-inner">
+                    <div class="header__middle-content">
+                        <button class="header__menu-button">
+                            <img class="header__menu-img" src="img/menu.png" alt="menu">
+                        </button>
+                        <div class="logo">
+                            <div class="logo__container">
+                                <img class="logo__img" src="img/logo.png" alt="logo">
+                                <div class="logo__content">
+                                    <p class="logo__text-top">Столовая.РУ</p>
+                                    <p class="logo__text-bottom">Создание пищеблоков</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__middle-content">
+                        <div class="header__search">
+                            <select class="header__search-select">
+                                <option>Первая опция</option>
+                                <option>Вторая опция</option>
+                            </select>
+                            <input class="header__search-input" type="text">
+                            <button class="header__search-button">
+                                <img class="header__search-img" src="img/search.png" alt="search">
+                            </button>
+                        </div>
+                        <a class="header__portal-link">
+                            <img class="header__portal-img" src="">
+                            <p>Мы на портале поставщиков</p>
+                        </a>
+                        <button class="header__phone-button">
+                            <img class="header__phone-img" src="img/telephone-handle-silhouette_(2).png" alt="phone">
+                        </button>
+                        <div class="header__shopping-cart">
+                            <button class="header__shopping-cart-button">
+                                <p class="header__shopping-cart-num">12</p>
+                                <img class="header__shopping-cart-img" src="img/online-shopping-cart.png" alt="shopping cart">
+                            </button>
+                            <div class="header__sum">
+                                <p class="header__sum-secondary">Сумма</p>
+                                <p>150 000 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__categories">
+                    <a class="header__categories-item">
+                        <img class="header__categories-img">
+                        <p>Тепловое</p>
+                    </a>
+                    <a class="header__categories-item">
+                        <img class="header__categories-img">
+                        <p>Холодильное</p>
+                    </a>
+                    <a class="header__categories-item">
+                        <img class="header__categories-img">
+                        <p>Электромеханическое</p>
+                    </a>
+                    <a class="header__categories-item">
+                        <img class="header__categories-img">
+                        <p>Посудомоечное</p>
+                    </a>
+                    <a class="header__categories-item">
+                        <img class="header__categories-img">
+                        <p>Хлебопекарное</p>
+                    </a>
+                    <a class="header__categories-item">
+                        <img class="header__categories-img">
+                        <p>Линии раздачи</p>
+                    </a>
+                    <a class="header__categories-item">
+                        <img class="header__categories-img">
+                        <p>Нейтральное</p>
+                    </a>
+                    <a class="header__categories-item">
+                        <img class="header__categories-img">
+                        <p>Для фаст фуда</p>
+                    </a>
+                    <a class="header__categories-item">
+                        <img class="header__categories-img">
+                        <p>Для залов</p>
+                    </a>
+                    <a class="header__categories-item">
+                        <img class="header__categories-img">
+                        <p>Вспомогательное</p>
+                    </a>
+                    <a class="header__categories-item">
+                        <img class="header__categories-img">
+                        <p>Для магазинов</p>
+                    </a>
+                </div>
+                <button class="header__bottom-button">
+                    <p class="header__bottom-text">Оборудование</p>
+                    <p class="header__bottom-arrow">></p>
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="main-top">
+        <div class="container">
+            <div class="main-top__container">
+                <div class="swiper">
+                    <div class="swiper__wrapper">
+                        <div class="swiper__slide">
+                            <div class="swiper__slide-content">
+                                <p class="swiper__slide-top-text">Портфолио</p>
+                                <p class="swiper__slide-middle-text">НИИ скорой помощи им. Н.В. Склифосовского</p>
+                                <p class="swiper__slide-bottom-text">Оборудование для пищеблоков</p>
+                                <button class="swiper__slide-button">Подробнее</button>
+                            </div>
+                            <img class="swiper__slide-img" src="img/slide-img.png" alt="slide img">
+                        </div>
+                        <div class="swiper__slide">
+                            <div class="swiper__slide-content">
+                                <p class="swiper__slide-top-text">Портфолио</p>
+                                <p class="swiper__slide-middle-text">НИИ скорой помощи им. Н.В. Склифосовского</p>
+                                <p class="swiper__slide-bottom-text">Оборудование для пищеблоков</p>
+                                <button class="swiper__slide-button">Подробнее</button>
+                            </div>
+                            <img class="swiper__slide-img" src="img/slide-img.png" alt="slide img">
+                        </div>
+                        <div class="swiper__slide">
+                            <div class="swiper__slide-content">
+                                <p class="swiper__slide-top-text">Портфолио</p>
+                                <p class="swiper__slide-middle-text">НИИ скорой помощи им. Н.В. Склифосовского</p>
+                                <p class="swiper__slide-bottom-text">Оборудование для пищеблоков</p>
+                                <button class="swiper__slide-button">Подробнее</button>
+                            </div>
+                            <img class="swiper__slide-img" src="img/slide-img.png" alt="slide img">
+                        </div>
+                        <div class="swiper__slide">
+                            <div class="swiper__slide-content">
+                                <p class="swiper__slide-top-text">Портфолио</p>
+                                <p class="swiper__slide-middle-text">НИИ скорой помощи им. Н.В. Склифосовского</p>
+                                <p class="swiper__slide-bottom-text">Оборудование для пищеблоков</p>
+                                <button class="swiper__slide-button">Подробнее</button>
+                            </div>
+                            <img class="swiper__slide-img" src="img/slide-img.png" alt="slide img">
+                        </div>
+                    </div>
+                    <div class="swiper__pagination"></div>
+                    <div class="swiper__button swiper__button-prev">
+                        <img src="img/arrow-prev.png" alt="arrow prev">
+                    </div>
+                    <div class="swiper__button swiper__button-next">
+                        <img src="img/arrow-next.png" alt="arrow next">
+                    </div>
+                </div>
+                <div class="sale">
+                    <div class="sale__inner">
+                        <img class="sale__img" src="img/giftbox.png" alt="giftbox">
+                        <p class="sale__text-top">Самые низкие цены</p>
+                        <p class="sale__text-bottom">Распродажа</p>
+                        <a class="sale__link">Каталог распродаж<span>></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-middle">
+        <div class="main-middle__container">
+            <div class="partners">
+                <div class="partners__list">
+                    <div class="partners__row">
+                        <div class="partners__item">
+                            <a class="partners__link">
+                                <img class="partners__img" src="img/partner-img-1.jpg">
+                            </a>
+                        </div>
+                        <div class="partners__separator"></div>
+                        <div class="partners__item">
+                            <a class="partners__link">
+                                <img class="partners__img" src="img/partner-img-2.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="partners__row">
+                        <div class="partners__item">
+                            <a class="partners__link">
+                                <img class="partners__img" src="img/partner-img-3.jpg">
+                            </a>
+                        </div>
+                        <div class="partners__separator"></div>
+                        <div class="partners__item">
+                            <a class="partners__link">
+                                <img class="partners__img" src="img/partner-img-4.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="partners__row">
+                        <div class="partners__item">
+                            <a class="partners__link">
+                                <img class="partners__img" src="img/partner-img-5.jpg">
+                            </a>
+                        </div>
+                        <div class="partners__separator"></div>
+                        <div class="partners__item">
+                            <a class="partners__link">Все бренды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-middle__text-item">
+                <p class="main-middle__text-title">Рекомендуем</p>
+                <p class="main-middle__text">
+                    В этих разделах вы можете получить подробную
+                    информацию о пищевом оборудовании для столовых, ресторанов и кафе
+                    ведущих производителей.
+                </p>
+            </div>
+            <div class="products">
+                <div class="products__container">
+                    <div class="products__element">
+                        <div class="products__text-field">
+                            <p class="products__name">Unox</p>
+                            <p class="products__title">Пароконвектоматы</p>
+                            <p class="products__description">
+                                Благодаря своей универсальности пароконвектоматы 
+                                быстро завоевывают пользователей по всему миру.
+                            </p>
+                        </div>
+                        <img class="products__img products__img-1" src="img/products-1.png" alt="product 1">
+                    </div>
+                    <div class="products__coloumn">
+                        <div class="products__element products__element--dark">
+                            <img class="products__img products__img-2" src="img/products-2.png" alt="product 2">
+                            <div class="products__text-field">
+                                <p class="products__name products__name--white">Abat</p>
+                                <p class="products__title products__title--white">Тепловое оборудование</p>
+                                <p class="products__description">
+                                    Более 55 лет успешно работает 
+                                    на рынке  торгово- технологического оборудования, 
+                                    по праву занимая лидирующее положение в данном сегменте.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="products__element">
+                            <div class="products__text-field">
+                                <p class="products__name">hallde</p>
+                                <p class="products__title">Овощерезки</p>
+                                <p class="products__description">
+                                    Мощный двигатель переводит высокий 
+                                    крутящий момент на режущий инструмент
+                                </p>
+                            </div>
+                            <img class="products__img products__img-3" src="img/products-3.png" alt="product 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-company">
+        <div class="about-company__container">
+            <img class="about-company__img" src="img/logo2.png" alt="logo">
+            <div class="about-company__text-field">
+                <p class="about-company__main-text about-company__main-text--logo">Столовая.РУ</p>
+                <p class="about-company__secondary-logo-text">создание оптимальных пищеблоков</p>
+                <p class="about-company__main-text about-company__main-text--small">Группа компаний</p>
+                <p class="about-company__secondary-text">Показатели:</p>
+                <p class="about-company__text">На рынке: 5 лет</p>
+                <p class="about-company__text">Объем контрактов: 4 млрд.р.</p>
+                <p class="about-company__text">Количество контрактов: 620</p>
+            </div>
+            <div class="about-company__info">
+                <p class="about-company__main-text">Комплексные решения оснащения столовых и кафе</p>
+                <p class="about-company__text">
+                    Компания «Диалог» предлагает комплексное оснащение столовых, ресторанов, кафе и баров в Москве. 
+                    Наши услуги построены по принципу полного цикла 
+                    обслуживания предприятий общепита и бизнеса HoReCa.
+                </p>
+                <p class="about-company__text">
+                    Иными словами, мы предлагаем проектирование «под ключ» 
+                    и постгарантийное обслуживание. География работы компании 
+                    охватывает всю страну. При этом в каждом регионе мы 
+                    готовы География работы компании охватывает всю страну. 
+                    При этом в каждом регионе мы готовы предложить 
+                    демократичные цены на профессиональное технологическое 
+                    оборудование для столовой и оптимальные решения с точки 
+                    зрения эффективности бизнеса, приемлемым уровнем 
+                    производительности в условиях ограниченного бюджета.
+                </p>
+            </div>
+            <button class="about-company__button">+</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__menu">
+                <button class="footer__menu-item">
+                    <p>Информация</p>
+                    <p>+</p>
+                </button>
+                <button class="footer__menu-item">
+                    <p>Оборудование</p>
+                    <p>+</p>
+                </button>
+                <button class="footer__menu-item">
+                    <p>Предложения</p>
+                    <p>+</p>
+                </button>
+                <button class="footer__menu-item">
+                    <p>Контакты</p>
+                    <p>+</p>
+                </button>
+                <button class="footer__menu-item footer__menu-item--no-border">
+                    <p>Реквизиты</p>
+                    <p>+</p>
+                </button>
+            </div>
+            <div class="footer__info">
+                <div class="logo">
+                    <div class="logo__container footer__logo-container">
+                        <img class="logo__img footer__logo-img" src="img/logo2.png" alt="logo">
+                        <div class="logo__content">
+                            <p class="logo__text-top footer__logo-text-top">Столовая.РУ</p>
+                            <p class="logo__text-bottom footer__logo-text-bottom">Создание оптимальных пищеблоков</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer__info-text">Сайт разработан NTI-systems</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

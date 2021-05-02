@@ -1,0 +1,594 @@
+
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	Eric Meyer					:: https://meyerweb.com
+	HTML5 Doctor				:: https://html5doctor.com
+	and the HTML5 Boilerplate	:: https://html5boilerplate.com
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+
+/* Handle box-sizing while better addressing child elements:
+   https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+
+/* Responsive images and other embedded objects
+*/
+img,
+object,
+embed {max-width: 100%;}
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+	 In fact, it *will* cause problems with Google Maps' controls at small size.
+	If this is the case for you, try uncommenting the following:
+#map img {
+		max-width: none;
+}
+*/
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted.
+	don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+.ie7 input[type="checkbox"] {vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+
+small {font-size: 85%;}
+
+strong {font-weight: bold;}
+
+td, td img {vertical-align: top;}
+
+/* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {width: auto; overflow: visible;}
+
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url(fonts/MyriadProRegular.woff);
+}
+
+@font-face {
+    font-family: 'Myriad Pro Light';
+    src: url(fonts/Myriad-Pro-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Myriad Pro - Light Semi Ext';
+    src: url(fonts/MyriadPro-LightSemiExt.woff);
+}
+body {
+  background-color: #f1f1f1; }
+
+button {
+  border: none;
+  padding: 0; }
+
+.container {
+  max-width: 1550px;
+  margin: auto; }
+
+.logo__container {
+  display: flex; }
+
+.logo__img {
+  width: 55px;
+  height: 55px;
+  margin-right: 10px; }
+
+.logo__text-top {
+  font-family: 'Myriad Pro Regular';
+  color: #353535;
+  font-size: 30px;
+  line-height: 32px; }
+
+.logo__text-bottom {
+  font-family: "Myriad Pro - Light Semi Ext";
+  color: #777777;
+  font-size: 18px;
+  word-spacing: 5px; }
+
+@media screen and (min-width: 1550px) {
+  .logo__text-bottom {
+    display: none; } }
+
+.menu__list {
+  display: flex;
+  justify-content: space-between; }
+
+.header__top {
+  display: none;
+  background-color: #00aa4b; }
+
+.header__middle {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px; }
+
+.header__middle-inner {
+  display: flex; }
+
+.header__middle-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.header__menu-button {
+  display: block;
+  border: none;
+  width: 73px;
+  height: 73px;
+  background-color: #fda11c;
+  border-radius: 50%;
+  padding: 25px 22px 23px 21px;
+  margin: 0 31px 2px 0; }
+
+.header__menu-img {
+  width: 30px;
+  height: 25px; }
+
+.header__search {
+  display: flex; }
+
+.header__search-select {
+  display: none; }
+
+.header__search-input {
+  display: none; }
+
+.header__search-img {
+  height: 57px;
+  width: 51px;
+  margin-right: 41px; }
+
+.header__portal-link {
+  display: none; }
+
+.header__sum {
+  display: none; }
+
+.header__phone-img {
+  height: 56px;
+  width: 45px;
+  margin-right: 33px; }
+
+.header__shopping-cart-button {
+  margin-bottom: 18px; }
+
+.header__shopping-cart-img {
+  width: 56px;
+  height: 50px; }
+
+.header__shopping-cart-num {
+  font-family: "Myriad Pro - Light Semi Ext";
+  font-size: 25px;
+  color: #fda11c;
+  height: 24px;
+  padding-left: 14px; }
+
+.header__bottom-button {
+  height: 83px;
+  width: 100%;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: #e2e2e2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 26px 4px 30px; }
+
+.header__bottom-text {
+  font-size: 30px;
+  font-family: "Myriad Pro - Light Semi Ext";
+  color: black; }
+
+.header__bottom-arrow {
+  font-size: 30px;
+  font-family: "Myriad Pro - Light Semi Ext";
+  color: black;
+  margin-bottom: 6px; }
+
+.header__categories {
+  display: none; }
+
+@media screen and (min-width: 1550px) {
+  .header__top {
+    display: block; }
+  .header__menu-button {
+    display: none; }
+  .header__search-select {
+    display: block; }
+  .header__search-input {
+    display: block; }
+  .header__portal-link {
+    display: flex; }
+  .header__sum {
+    display: block; }
+  .header__categories {
+    display: flex; }
+  .header__bottom-button {
+    display: none; } }
+
+@media screen and (min-width: 1550px) {
+  .main-top__container {
+    display: flex; } }
+
+.swiper {
+  position: relative;
+  width: 100%;
+  height: 556px;
+  overflow: hidden; }
+  .swiper__wrapper {
+    display: inline-flex;
+    width: auto;
+    height: 100%; }
+  .swiper__slide {
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    background-color: #282828;
+    display: flex; }
+  .swiper__button {
+    bottom: 30px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 48px; }
+  .swiper__button-prev {
+    left: 38px; }
+  .swiper__button-next {
+    right: 37px; }
+  .swiper__pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 45px;
+    margin: auto; }
+  .swiper__pagination-bullet {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    margin: 0 9.5px; }
+    .swiper__pagination-bullet--active {
+      background-color: #ffffff; }
+  .swiper__slide-content {
+    margin: 82px 0 0 33px;
+    width: 365px; }
+  .swiper__slide-top-text {
+    color: #777777;
+    font-family: "Myriad Pro - Light Semi Ext";
+    font-size: 25px; }
+  .swiper__slide-middle-text {
+    font-size: 40px;
+    font-family: "Myriad Pro Regular";
+    color: #f3f1f1;
+    margin: 42px 0 23px 0;
+    line-height: 42px; }
+  .swiper__slide-bottom-text {
+    font-size: 25px;
+    font-family: "Myriad Pro - Light Semi Ext";
+    font-weight: 300;
+    color: #f3f1f1;
+    word-spacing: 0px; }
+  .swiper__slide-button {
+    background-color: #faad3d;
+    margin-top: 36px;
+    padding: 7px 34px 8px 31px;
+    border-radius: 40px;
+    font-family: 'Myriad Pro Regular';
+    font-size: 30px;
+    color: #ffffff; }
+  .swiper__slide-img {
+    width: 274px;
+    height: 387px;
+    margin: 61px 0 0 43px; }
+
+.sale {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 2px solid #faad3d; }
+  .sale__inner {
+    padding: 80px 0 68px 59px; }
+  .sale__text-top {
+    margin-top: 17px;
+    font-family: "Myriad Pro - Light Semi Ext";
+    font-size: 25px;
+    color: #191919; }
+  .sale__text-bottom {
+    font-family: 'Myriad Pro Regular';
+    font-size: 50px;
+    color: #191919;
+    margin-bottom: 34px; }
+  .sale__link {
+    color: #faad3d;
+    font-family: "Myriad Pro - Light Semi Ext";
+    font-size: 30px; }
+    .sale__link span {
+      margin-left: 16px; }
+
+.partners__list {
+  margin: 30px 0 100px; }
+
+.partners__row {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 25px 0;
+  margin-bottom: 3px; }
+
+.partners__item {
+  height: 119px;
+  width: 50%;
+  display: flex; }
+  .partners__item--bordered {
+    border-right: 2px solid #e7e6e6; }
+
+.partners__img {
+  margin-top: 14px; }
+
+.partners__link {
+  display: block;
+  margin: auto;
+  font-family: 'Myriad Pro Regular';
+  font-size: 30px; }
+
+.partners__separator {
+  width: 2px;
+  height: 119px;
+  border: 1px solid #e7e6e6;
+  margin: 0 29px; }
+
+.main-middle__text-item {
+  text-align: center;
+  padding: 36px 16px; }
+
+.main-middle__text-title {
+  font-size: 50px;
+  font-family: 'Myriad Pro Regular';
+  color: #000000; }
+
+.main-middle__text {
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: "Myriad Pro - Light Semi Ext";
+  color: #777777; }
+
+.products__container {
+  margin: 40px 27px 75px 30px; }
+
+.products__element {
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  display: flex; }
+  .products__element--dark {
+    background-color: #282828; }
+
+.products__text-field {
+  padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.products__name {
+  font-family: "Myriad Pro - Light Semi Ext";
+  color: #191919;
+  font-size: 30px;
+  margin-top: 90px;
+  text-transform: uppercase; }
+  .products__name--white {
+    color: #ffffff; }
+
+.products__title {
+  color: #191919;
+  font-family: 'Myriad Pro Regular';
+  font-size: 40px; }
+  .products__title--white {
+    color: #ffffff; }
+
+.products__description {
+  font-family: "Myriad Pro - Light Semi Ext";
+  font-size: 25px;
+  color: #777777;
+  margin-bottom: 75px; }
+
+.products__img-1 {
+  margin-top: 25px; }
+
+.products__img-2 {
+  margin: 48px 0 21px; }
+
+.products__img-3 {
+  margin: 74px 0 17px; }
+
+.about-company__container {
+  padding: 80px 63px 75px 28px; }
+
+.about-company__text-field {
+  padding: 0 0 125px 57px; }
+
+.about-company__img {
+  margin: 0 0 45px 56px; }
+
+.about-company__main-text {
+  font-size: 50px;
+  font-family: 'Myriad Pro Regular';
+  margin-bottom: 50px; }
+  .about-company__main-text--logo {
+    height: 55px;
+    margin: 0; }
+  .about-company__main-text--small {
+    margin-bottom: 2px;
+    font-size: 40px;
+    height: auto; }
+
+.about-company__secondary-logo-text {
+  font-family: "Myriad Pro - Light Semi Ext";
+  font-size: 25px;
+  color: #777777;
+  margin-bottom: 50px; }
+
+.about-company__secondary-text {
+  font-family: "Myriad Pro - Light Semi Ext";
+  font-size: 30px;
+  color: #777777;
+  margin-bottom: 35px; }
+
+.about-company__text {
+  font-size: 30px;
+  font-family: "Myriad Pro - Light Semi Ext";
+  line-height: 36px; }
+
+.about-company__button {
+  margin: 55px 0 0 3px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #282828;
+  color: #ffffff;
+  font-size: 50px;
+  font-family: "Myriad Pro - Light Semi Ext"; }
+
+.footer__container {
+  background-color: #282828;
+  margin-top: 80px;
+  padding-top: 40px; }
+
+.footer__menu {
+  padding: 6px 47px 38px 46px; }
+
+.footer__menu-item {
+  display: flex;
+  width: 100%;
+  padding: 30px 6px 30px 4px;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Myriad Pro - Light Semi Ext";
+  color: #ffffff;
+  font-size: 30px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(243, 242, 242, 0.16); }
+  .footer__menu-item--no-border {
+    border: none; }
+
+.footer__info {
+  background-color: #1f1f1f;
+  padding: 41px 0 30px 49px; }
+
+.footer__logo-img {
+  width: 88px;
+  height: 88px;
+  margin-right: 24px; }
+
+.footer__logo-text-top {
+  font-size: 50px;
+  color: #ffffff;
+  height: 42px;
+  margin-top: 13px; }
+
+.footer__logo-text-bottom {
+  font-size: 30px;
+  word-spacing: 1px; }
+
+.footer__info-text {
+  font-family: "Myriad Pro - Light Semi Ext";
+  font-size: 41px;
+  margin-top: 27px;
+  color: #ffffff; }
+
